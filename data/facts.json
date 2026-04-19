@@ -1,0 +1,99 @@
+{
+  "pairs": [
+    null,
+    {
+      "defendant_id": "defendant_1",
+      "prosecution_id": "prosecutor_1",
+      "shared_facts": [
+        "Общий факт для шага 1.",
+        "Еще один общий факт для шага 1."
+      ],
+      "defendant_facts": [
+        "Факт о подсудимом 1 во время процесса.",
+        "Дополнительный факт о подсудимом 1."
+      ],
+      "prosecution_facts": [
+        "Факт об обвинителе 1 во время процесса.",
+        "Дополнительный факт об обвинителе 1."
+      ]
+    },
+    {
+      "defendant_id": "defendant_2",
+      "prosecution_id": "prosecutor_2",
+      "shared_facts": [
+        "Общий факт для шага 2."
+      ],
+      "defendant_facts": [
+        "Факт о подсудимом 2."
+      ],
+      "prosecution_facts": [
+        "Факт об обвинителе 2."
+      ]
+    },
+    {
+      "defendant_id": "defendant_3",
+      "prosecution_id": "prosecutor_3",
+      "shared_facts": [
+        "Общий факт для шага 3."
+      ],
+      "defendant_facts": [
+        "Факт о подсудимом 3."
+      ],
+      "prosecution_facts": [
+        "Факт об обвинителе 3."
+      ]
+    },
+    {
+      "defendant_id": "defendant_4",
+      "prosecution_id": "prosecutor_4",
+      "shared_facts": [
+        "Общий факт для шага 4."
+      ],
+      "defendant_facts": [
+        "Факт о подсудимом 4."
+      ],
+      "prosecution_facts": [
+        "Факт об обвинителе 4."
+      ]
+    },
+    {
+      "defendant_id": "defendant_5",
+      "prosecution_id": "prosecutor_5",
+      "shared_facts": [
+        "Общий факт для шага 5."
+      ],
+      "defendant_facts": [
+        "Факт о подсудимом 5."
+      ],
+      "prosecution_facts": [
+        "Факт об обвинителе 5."
+      ]
+    },
+    {
+      "defendant_id": "defendant_6",
+      "prosecution_id": "prosecutor_6",
+      "shared_facts": [
+        "Общий факт для шага 6."
+      ],
+      "defendant_facts": [
+        "Факт о подсудимом 6."
+      ],
+      "prosecution_facts": [
+        "Факт об обвинителе 6."
+      ]
+    },
+    {
+      "defendant_id": "defendant_7",
+      "prosecution_id": "prosecutor_7",
+      "shared_facts": [
+        "Общий факт для шага 7."
+      ],
+      "defendant_facts": [
+        "Факт о подсудимом 7."
+      ],
+      "prosecution_facts": [
+        "Факт об обвинителе 7."
+      ]
+    }
+  ]
+}

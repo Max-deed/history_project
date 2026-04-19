@@ -1,0 +1,100 @@
+{
+  "events": [
+    {
+      "unique_id": "pair-0",
+      "start_date": {
+        "year": "1945",
+        "month": "11",
+        "day": "19"
+      },
+      "text": {
+        "headline": "Нюрнбергский процесс",
+        "text": "<div class=\"timeline-title-card\"><h3>Подсудимые и сторона обвинения</h3></div>"
+      }
+    },
+    {
+      "unique_id": "pair-1",
+      "start_date": {
+        "year": "1945",
+        "month": "11",
+        "day": "20"
+      },
+      "text": {
+        "headline": "Шаг 1",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_1\" data-prosecution-id=\"prosecutor_1\"></div>"
+      }
+    },
+    {
+      "unique_id": "pair-2",
+      "start_date": {
+        "year": "1945",
+        "month": "11",
+        "day": "21"
+      },
+      "text": {
+        "headline": "Шаг 2",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_2\" data-prosecution-id=\"prosecutor_2\"></div>"
+      }
+    },
+    {
+      "unique_id": "pair-3",
+      "start_date": {
+        "year": "1945",
+        "month": "11",
+        "day": "22"
+      },
+      "text": {
+        "headline": "Шаг 3",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_3\" data-prosecution-id=\"prosecutor_3\"></div>"
+      }
+    },
+    {
+      "unique_id": "pair-4",
+      "start_date": {
+        "year": "1945",
+        "month": "11",
+        "day": "23"
+      },
+      "text": {
+        "headline": "Шаг 4",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_4\" data-prosecution-id=\"prosecutor_4\"></div>"
+      }
+    },
+    {
+      "unique_id": "pair-5",
+      "start_date": {
+        "year": "1945",
+        "month": "11",
+        "day": "24"
+      },
+      "text": {
+        "headline": "Шаг 5",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_5\" data-prosecution-id=\"prosecutor_5\"></div>"
+      }
+    },
+    {
+      "unique_id": "pair-6",
+      "start_date": {
+        "year": "1945",
+        "month": "11",
+        "day": "25"
+      },
+      "text": {
+        "headline": "Шаг 6",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_6\" data-prosecution-id=\"prosecutor_6\"></div>"
+      }
+    },
+    {
+      "unique_id": "pair-7",
+      "start_date": {
+        "year": "1945",
+        "month": "11",
+        "day": "26"
+      },
+      "text": {
+        "headline": "Шаг 7",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_7\" data-prosecution-id=\"prosecutor_7\"></div>"
+      }
+    }
+  ]
+}

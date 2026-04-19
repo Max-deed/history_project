@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Судебный процесс — Таймлайн</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-overlay">
+      <div class="top-bar">
+        <a href="#" class="logo">
+          <img src="media/logo.png" alt="Логотип проекта">
+        </a>
+
+        <nav class="main-nav">
+          <ul>
+            <li class="nav-label">Навигация |</li>
+            <li><a href="#about">О событии</a></li>
+            <li><a href="#timeline-section">Таймлайн</a></li>
+            <li><a href="#shared-details-section">Материалы</a></li>
+            <li><a href="#authors">Авторы</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-title">
+        <h1>Хроника Нюрнберга: интерактивная временная шкала</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>
+        Нюрнбергский процесс — один из ключевых международных судебных процессов XX века.
+        На этой странице представлена интерактивная временная шкала с сопоставлением подсудимых и стороны обвинения.
+      </p>
+    </section>
+
+    <section id="about" class="summary">
+      <h2>Краткая справка о событии</h2>
+      <p>
+        Международный военный трибунал рассматривал обвинения в преступлениях против мира,
+        военных преступлениях, преступлениях против человечности и участии в общем заговоре.
+      </p>
+      <ul>
+        <li>Период процесса: 1945–1946 годы</li>
+        <li>Судебная инстанция: Международный военный трибунал</li>
+        <li>Место процесса: Нюрнберг</li>
+      </ul>
+    </section>
+
+    <section id="timeline-section" class="timeline-wrapper">
+      <h2>Хронология процесса</h2>
+      <div id="timeline-embed"></div>
+    </section>
+
+    <section id="shared-details-section" class="shared-details-section shared-details-hidden">
+      <div class="shared-pair-facts">
+        <h3>Факты во время процесса</h3>
+        <div id="pair-facts-content"></div>
+      </div>
+
+      <div class="shared-details-grid">
+        <div class="shared-details-column">
+          <h3>Подсудимый</h3>
+          <div class="timeline-details" id="details-defendants"></div>
+        </div>
+
+        <div class="shared-details-column">
+          <h3>Сторона обвинения</h3>
+          <div class="timeline-details" id="details-prosecution"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Судебный таймлайн. Все права защищены.</p>
+    <p id="authors">
+      Авторы:<br>
+      1. Дедовец Максим Дмитриевич<br>
+      2. Сварчевский Артем Константинович
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

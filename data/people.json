@@ -1,0 +1,204 @@
+{
+  "persons": [
+    {
+      "id": "defendant_1",
+      "name": "Подсудимый 1",
+      "role": "Подсудимый",
+      "short_bio": "Краткая биография подсудимого 1.",
+      "documents": [
+        {
+          "title": "Документ по подсудимому 1",
+          "file": "data/docs/defendant_1.pdf"
+        }
+      ],
+      "media": {
+        "photo": "media/defendant_1.jpg",
+        "video": [
+          {
+            "title": "Видео подсудимого 1",
+            "file": "media/defendant_1.mp4",
+            "poster": "media/defendant_1.jpg"
+          }
+        ],
+        "audio": [
+          {
+            "title": "Аудио подсудимого 1",
+            "file": "media/defendant_1.mp3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "defendant_2",
+      "name": "Подсудимый 2",
+      "role": "Подсудимый",
+      "short_bio": "Краткая биография подсудимого 2.",
+      "documents": [],
+      "media": {
+        "photo": "media/defendant_2.jpg",
+        "video": [],
+        "audio": []
+      }
+    },
+    {
+      "id": "defendant_3",
+      "name": "Подсудимый 3",
+      "role": "Подсудимый",
+      "short_bio": "Краткая биография подсудимого 3.",
+      "documents": [],
+      "media": {
+        "photo": "media/defendant_3.jpg",
+        "video": [],
+        "audio": []
+      }
+    },
+    {
+      "id": "defendant_4",
+      "name": "Подсудимый 4",
+      "role": "Подсудимый",
+      "short_bio": "Краткая биография подсудимого 4.",
+      "documents": [],
+      "media": {
+        "photo": "media/defendant_4.jpg",
+        "video": [],
+        "audio": []
+      }
+    },
+    {
+      "id": "defendant_5",
+      "name": "Подсудимый 5",
+      "role": "Подсудимый",
+      "short_bio": "Краткая биография подсудимого 5.",
+      "documents": [],
+      "media": {
+        "photo": "media/defendant_5.jpg",
+        "video": [],
+        "audio": []
+      }
+    },
+    {
+      "id": "defendant_6",
+      "name": "Подсудимый 6",
+      "role": "Подсудимый",
+      "short_bio": "Краткая биография подсудимого 6.",
+      "documents": [],
+      "media": {
+        "photo": "media/defendant_6.jpg",
+        "video": [],
+        "audio": []
+      }
+    },
+    {
+      "id": "defendant_7",
+      "name": "Подсудимый 7",
+      "role": "Подсудимый",
+      "short_bio": "Краткая биография подсудимого 7.",
+      "documents": [],
+      "media": {
+        "photo": "media/defendant_7.jpg",
+        "video": [],
+        "audio": []
+      }
+    },
+    {
+      "id": "prosecutor_1",
+      "name": "Обвинитель 1",
+      "role": "Сторона обвинения",
+      "short_bio": "Краткая биография обвинителя 1.",
+      "documents": [
+        {
+          "title": "Документ обвинителя 1",
+          "file": "data/docs/prosecutor_1.pdf"
+        }
+      ],
+      "media": {
+        "photo": "media/prosecutor_1.jpg",
+        "video": [
+          {
+            "title": "Видео обвинителя 1",
+            "file": "media/prosecutor_1.mp4",
+            "poster": "media/prosecutor_1.jpg"
+          }
+        ],
+        "audio": [
+          {
+            "title": "Аудио обвинителя 1",
+            "file": "media/prosecutor_1.mp3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "prosecutor_2",
+      "name": "Обвинитель 2",
+      "role": "Сторона обвинения",
+      "short_bio": "Краткая биография обвинителя 2.",
+      "documents": [],
+      "media": {
+        "photo": "media/prosecutor_2.jpg",
+        "video": [],
+        "audio": []
+      }
+    },
+    {
+      "id": "prosecutor_3",
+      "name": "Обвинитель 3",
+      "role": "Сторона обвинения",
+      "short_bio": "Краткая биография обвинителя 3.",
+      "documents": [],
+      "media": {
+        "photo": "media/prosecutor_3.jpg",
+        "video": [],
+        "audio": []
+      }
+    },
+    {
+      "id": "prosecutor_4",
+      "name": "Обвинитель 4",
+      "role": "Сторона обвинения",
+      "short_bio": "Краткая биография обвинителя 4.",
+      "documents": [],
+      "media": {
+        "photo": "media/prosecutor_4.jpg",
+        "video": [],
+        "audio": []
+      }
+    },
+    {
+      "id": "prosecutor_5",
+      "name": "Обвинитель 5",
+      "role": "Сторона обвинения",
+      "short_bio": "Краткая биография обвинителя 5.",
+      "documents": [],
+      "media": {
+        "photo": "media/prosecutor_5.jpg",
+        "video": [],
+        "audio": []
+      }
+    },
+    {
+      "id": "prosecutor_6",
+      "name": "Обвинитель 6",
+      "role": "Сторона обвинения",
+      "short_bio": "Краткая биография обвинителя 6.",
+      "documents": [],
+      "media": {
+        "photo": "media/prosecutor_6.jpg",
+        "video": [],
+        "audio": []
+      }
+    },
+    {
+      "id": "prosecutor_7",
+      "name": "Обвинитель 7",
+      "role": "Сторона обвинения",
+      "short_bio": "Краткая биография обвинителя 7.",
+      "documents": [],
+      "media": {
+        "photo": "media/prosecutor_7.jpg",
+        "video": [],
+        "audio": []
+      }
+    }
+  ]
+}
