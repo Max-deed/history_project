@@ -25,7 +25,7 @@ $(function () {
   }
 
   function buildVideo(items) {
-    if (!items || !items.length) return '<p>Видео не добавлено.</p>';
+    if (!items || !items.length) return '<p>Видео пока не добавлено.</p>';
 
     var html = '';
     $.each(items, function (_, item) {
@@ -41,7 +41,7 @@ $(function () {
   }
 
   function buildAudio(items) {
-    if (!items || !items.length) return '<p>Аудио не добавлено.</p>';
+    if (!items || !items.length) return '<p>Аудио пока не добавлено.</p>';
 
     var html = '';
     $.each(items, function (_, item) {
@@ -109,19 +109,14 @@ $(function () {
 
     html += '<div class="person-detail-meta">';
     html += '<h3>' + esc(p.name) + '</h3>';
-    if (p.role) html += '<p><strong>Роль:</strong> ' + esc(p.role) + '</p>';
-    if (p.short_bio) html += '<p><strong>Краткая биография:</strong> ' + esc(p.short_bio) + '</p>';
+    if (p.role) html += '<p><strong>Раздел:</strong> ' + esc(p.role) + '</p>';
+    if (p.short_bio) html += '<p><strong>Краткая справка:</strong> ' + esc(p.short_bio) + '</p>';
     html += '</div>';
     html += '</div>';
 
     html += '<div class="person-detail-section">';
-    html += '<h4>Факты во время процесса</h4>';
+    html += '<h4>Ключевые тезисы</h4>';
     html += buildFacts(personFacts, 'Факты для этого участника пока не добавлены.');
-    html += '</div>';
-
-    html += '<div class="person-detail-section">';
-    html += '<h4>Официальные документы</h4>';
-    html += buildLinks(p.documents, 'Документы не добавлены.');
     html += '</div>';
 
     html += '<div class="person-detail-section">';
@@ -179,6 +174,7 @@ $(function () {
     timeline.on('loaded', function () {
       setTimeout(function () {
         renderTimelinePairs();
+        removeMiniPreview(); 
         renderByIndex(0);
       }, 700);
     });
@@ -186,6 +182,7 @@ $(function () {
     timeline.on('change', function (data) {
       setTimeout(function () {
         renderTimelinePairs();
+        removeMiniPreview(); // 👈 ДОБАВИЛИ
       }, 150);
 
       var uniqueId = data && data.unique_id ? data.unique_id : 'pair-0';
@@ -231,4 +228,26 @@ $(function () {
     .fail(function () {
       loadFacts(initTimeline);
     });
+});
+$(function () {
+  $('#toggle-theory').on('click', function () {
+    $('#theory-block').toggleClass('theory-hidden');
+
+    if ($('#theory-block').hasClass('theory-hidden')) {
+      $(this).text('Показать подробнее');
+    } else {
+      $(this).text('Скрыть');
+    }
+  });
+  // --- УДАЛЕНИЕ МИНИ-ПРЕВЬЮ TIMELINE (ТО ЧТО ТЫ ОБВЕЛ) ---
+function removeMiniPreview() {
+  $('.tl-timemarker-content-container').hide();
+  $('.tl-timemarker-media-container').hide();
+
+  // защита от перерисовки timeline
+  setTimeout(function () {
+    $('.tl-timemarker-content-container').hide();
+    $('.tl-timemarker-media-container').hide();
+  }, 300);
+}
 });

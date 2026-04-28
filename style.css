@@ -23,7 +23,7 @@ a {
 .site-header {
   position: relative;
   min-height: 320px;
-  background-image: url("media/header-bg.jpg");
+  background-image: url("media/header-bg.png");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -390,5 +390,118 @@ section {
   .main-nav .nav-label {
     font-size: 13px;
     padding: 4px 0;
+  }
+}
+
+.timeline-event-card {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 18px 22px;
+  text-align: left;
+  border-left: 4px solid #222;
+  background: #fafafa;
+  border-radius: 10px;
+}
+
+.timeline-event-card .event-date {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.timeline-event-card h3 {
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.timeline-event-card p {
+  font-size: 15px;
+  color: #333;
+}
+
+.person-detail-header img[src=""] {
+  display: none;
+}
+
+.theory-hidden {
+  display: none;
+}
+
+.theory-btn {
+  margin-top: 12px;
+  padding: 8px 14px;
+  border: none;
+  background: #222;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.theory-btn:hover {
+  background: #444;
+}
+
+#theory-block {
+  margin-top: 18px;
+}
+/* ============================= */
+/* УБИРАЕМ МИНИ-ПРЕВЬЮ TIMELINE */
+/* ============================= */
+.tl-timemarker-content-container,
+.tl-timemarker-media-container {
+  display: none !important;
+}
+
+/* ============================= */
+/* УЛУЧШЕННАЯ АДАПТИВНОСТЬ */
+/* ============================= */
+
+/* планшеты */
+@media (max-width: 900px) {
+  .timeline-slide-pair {
+    grid-template-columns: 1fr !important;
+  }
+
+  .timeline-slide-card img {
+    width: 110px !important;
+  }
+
+  .person-detail-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .person-detail-header img {
+    width: 100px !important;
+  }
+}
+
+/* телефоны */
+@media (max-width: 480px) {
+  #timeline-embed {
+    height: 300px !important;
+  }
+
+  .timeline-slide-card h3 {
+    font-size: 16px;
+  }
+
+  .person-detail-meta h3 {
+    font-size: 18px;
+  }
+}
+
+/* ультра маленькие экраны */
+@media (max-width: 360px) {
+  .timeline-slide-card img {
+    width: 90px !important;
+  }
+
+  .header-title h1 {
+    font-size: 20px;
   }
 }

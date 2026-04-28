@@ -20,8 +20,8 @@
         "day": "20"
       },
       "text": {
-        "headline": "Шаг 1",
-        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_1\" data-prosecution-id=\"prosecutor_1\"></div>"
+        "headline": "",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"goering\" data-prosecution-id=\"jackson\"></div>"
       }
     },
     {
@@ -32,8 +32,8 @@
         "day": "21"
       },
       "text": {
-        "headline": "Шаг 2",
-        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_2\" data-prosecution-id=\"prosecutor_2\"></div>"
+        "headline": "",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"hess\" data-prosecution-id=\"jackson\"></div>"
       }
     },
     {
@@ -41,11 +41,11 @@
       "start_date": {
         "year": "1945",
         "month": "11",
-        "day": "22"
+        "day": "21"
       },
       "text": {
-        "headline": "Шаг 3",
-        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_3\" data-prosecution-id=\"prosecutor_3\"></div>"
+        "headline": "",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"ribbentrop\" data-prosecution-id=\"jackson\"></div>"
       }
     },
     {
@@ -53,11 +53,11 @@
       "start_date": {
         "year": "1945",
         "month": "11",
-        "day": "23"
+        "day": "21"
       },
       "text": {
-        "headline": "Шаг 4",
-        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_4\" data-prosecution-id=\"prosecutor_4\"></div>"
+        "headline": "",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"jodl\" data-prosecution-id=\"maxwell_fyfe\"></div>"
       }
     },
     {
@@ -65,11 +65,11 @@
       "start_date": {
         "year": "1945",
         "month": "11",
-        "day": "24"
+        "day": "21"
       },
       "text": {
-        "headline": "Шаг 5",
-        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_5\" data-prosecution-id=\"prosecutor_5\"></div>"
+        "headline": "",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"sauckel\" data-prosecution-id=\"maxwell_fyfe\"></div>"
       }
     },
     {
@@ -77,11 +77,11 @@
       "start_date": {
         "year": "1945",
         "month": "11",
-        "day": "25"
+        "day": "21"
       },
       "text": {
-        "headline": "Шаг 6",
-        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_6\" data-prosecution-id=\"prosecutor_6\"></div>"
+        "headline": "",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"papen\" data-prosecution-id=\"maxwell_fyfe\"></div>"
       }
     },
     {
@@ -89,11 +89,23 @@
       "start_date": {
         "year": "1945",
         "month": "11",
-        "day": "26"
+        "day": "22"
       },
       "text": {
-        "headline": "Шаг 7",
-        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"defendant_7\" data-prosecution-id=\"prosecutor_7\"></div>"
+        "headline": "",
+        "text": "<div class=\"timeline-pair-placeholder\" data-defendant-id=\"streicher\" data-prosecution-id=\"tribunal_experts\"></div>"
+      }
+    },
+    {
+      "unique_id": "pair-8",
+      "start_date": {
+        "year": "1946",
+        "month": "10",
+        "day": "1"
+      },
+      "text": {
+        "headline": "Подведение итогов",
+        "text": "<div class=\"timeline-title-card\"><h3>Итоги Нюрнбергского процесса</h3></div>"
       }
     }
   ]
