@@ -1,0 +1,332 @@
+{
+  "persons": [
+    {
+      "id": "goering",
+      "name": "Герман Геринг",
+      "role": "Подсудимый",
+      "short_bio": "Один из главных руководителей нацистской Германии; в обвинительном заключении указан среди основных обвиняемых Международного военного трибунала.",
+      "documents": [
+        {
+          "title": "Обвинительное заключение Международного военного трибунала",
+          "file": "data/docs/indictment.pdf"
+        },
+        {
+          "title": "Устав Международного военного трибунала. Статья 6",
+          "file": "data/docs/imt_charter_article_6.pdf"
+        }
+      ],
+      "media": {
+        "photo": "media/goering.jpg",
+        "video": [
+          {
+            "title": "Видеофрагмент: Геринг в зале суда",
+            "file": "media/video/goering.mp4",
+            "poster": "media/goering.jpg"
+          }
+        ],
+        "audio": [
+          {
+            "title": "Аудиофрагмент: ответ о виновности",
+            "file": "media/audio/goering.mp3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hess",
+      "name": "Рудольф Гесс",
+      "role": "Подсудимый",
+      "short_bio": "Один из обвиняемых на Нюрнбергском процессе; 21 ноября отвечал на вопрос о признании вины.",
+      "documents": [
+        {
+          "title": "Обвинительное заключение Международного военного трибунала",
+          "file": "data/docs/indictment.pdf"
+        },
+        {
+          "title": "Устав Международного военного трибунала. Статья 6",
+          "file": "data/docs/imt_charter_article_6.pdf"
+        }
+      ],
+      "media": {
+        "photo": "media/hess.jpg",
+        "video": [
+          {
+            "title": "Видеофрагмент: Гесс в зале суда",
+            "file": "media/video/hess.mp4",
+            "poster": "media/hess.jpg"
+          }
+        ],
+        "audio": [
+          {
+            "title": "Аудиофрагмент: ответ о виновности",
+            "file": "media/audio/hess.mp3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ribbentrop",
+      "name": "Йоахим фон Риббентроп",
+      "role": "Подсудимый",
+      "short_bio": "Бывший министр иностранных дел нацистской Германии; в обвинительном заключении назван среди обвиняемых.",
+      "documents": [
+        {
+          "title": "Обвинительное заключение Международного военного трибунала",
+          "file": "data/docs/indictment.pdf"
+        },
+        {
+          "title": "Устав Международного военного трибунала. Статья 6",
+          "file": "data/docs/imt_charter_article_6.pdf"
+        }
+      ],
+      "media": {
+        "photo": "media/ribbentrop.jpg",
+        "video": [
+          {
+            "title": "Видеофрагмент: Риббентроп в зале суда",
+            "file": "media/video/ribbentrop.mp4",
+            "poster": "media/ribbentrop.jpg"
+          }
+        ],
+        "audio": [
+          {
+            "title": "Аудиофрагмент: ответ о виновности",
+            "file": "media/audio/ribbentrop.mp3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jodl",
+      "name": "Альфред Йодль",
+      "role": "Подсудимый",
+      "short_bio": "Представитель высшего военного руководства Германии; в суде отрицал вину и ссылался на чистую совесть перед Богом, историей и народом.",
+      "documents": [
+        {
+          "title": "Обвинительное заключение Международного военного трибунала",
+          "file": "data/docs/indictment.pdf"
+        },
+        {
+          "title": "Устав Международного военного трибунала. Статья 6",
+          "file": "data/docs/imt_charter_article_6.pdf"
+        }
+      ],
+      "media": {
+        "photo": "media/jodl.jpg",
+        "video": [
+          {
+            "title": "Видеофрагмент: Йодль в зале суда",
+            "file": "media/video/jodl.mp4",
+            "poster": "media/jodl.jpg"
+          }
+        ],
+        "audio": [
+          {
+            "title": "Аудиофрагмент: ответ о виновности",
+            "file": "media/audio/jodl.mp3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sauckel",
+      "name": "Фриц Заукель",
+      "role": "Подсудимый",
+      "short_bio": "Один из обвиняемых Международного военного трибунала; при ответе на вопрос о виновности заявил, что не признаёт себя виновным.",
+      "documents": [
+        {
+          "title": "Обвинительное заключение Международного военного трибунала",
+          "file": "data/docs/indictment.pdf"
+        },
+        {
+          "title": "Устав Международного военного трибунала. Статья 6",
+          "file": "data/docs/imt_charter_article_6.pdf"
+        }
+      ],
+      "media": {
+        "photo": "media/sauckel.jpg",
+        "video": [
+          {
+            "title": "Видеофрагмент: Заукель в зале суда",
+            "file": "media/video/sauckel.mp4",
+            "poster": "media/sauckel.jpg"
+          }
+        ],
+        "audio": [
+          {
+            "title": "Аудиофрагмент: ответ о виновности",
+            "file": "media/audio/sauckel.mp3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "papen",
+      "name": "Франц фон Папен",
+      "role": "Подсудимый",
+      "short_bio": "Политический деятель Германии, включённый в список обвиняемых; в суде категорически отрицал признание вины.",
+      "documents": [
+        {
+          "title": "Обвинительное заключение Международного военного трибунала",
+          "file": "data/docs/indictment.pdf"
+        },
+        {
+          "title": "Устав Международного военного трибунала. Статья 6",
+          "file": "data/docs/imt_charter_article_6.pdf"
+        }
+      ],
+      "media": {
+        "photo": "media/papen.jpg",
+        "video": [
+          {
+            "title": "Видеофрагмент: фон Папен в зале суда",
+            "file": "media/video/papen.mp4",
+            "poster": "media/papen.jpg"
+          }
+        ],
+        "audio": [
+          {
+            "title": "Аудиофрагмент: ответ о виновности",
+            "file": "media/audio/papen.mp3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "streicher",
+      "name": "Юлиус Штрайхер",
+      "role": "Подсудимый",
+      "short_bio": "Один из обвиняемых; защита просила психиатрическую экспертизу, но эксперты признали его вменяемым и способным защищать себя.",
+      "documents": [
+        {
+          "title": "Обвинительное заключение Международного военного трибунала",
+          "file": "data/docs/indictment.pdf"
+        },
+        {
+          "title": "Устав Международного военного трибунала. Статья 6",
+          "file": "data/docs/imt_charter_article_6.pdf"
+        },
+        {
+          "title": "Решение Трибунала о психиатрической экспертизе Юлиуса Штрайхера",
+          "file": "data/docs/streicher_examination.pdf"
+        }
+      ],
+      "media": {
+        "photo": "media/streicher.jpg",
+        "video": [
+          {
+            "title": "Видеофрагмент: Штрайхер в зале суда",
+            "file": "media/video/streicher.mp4",
+            "poster": "media/streicher.jpg"
+          }
+        ],
+        "audio": [
+          {
+            "title": "Аудиофрагмент: материалы по экспертизе",
+            "file": "media/audio/streicher.mp3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jackson",
+      "name": "Роберт Джексон",
+      "role": "Главный обвинитель от США",
+      "short_bio": "Представитель американской стороны обвинения. Во вступительной речи сформулировал значение процесса, проблему беспристрастности суда и идею ответственности за агрессивную войну.",
+      "documents": [
+        {
+          "title": "Вступительная речь Роберта Джексона",
+          "file": "data/docs/jackson_opening_statement.pdf"
+        },
+        {
+          "title": "Обвинительное заключение Международного военного трибунала",
+          "file": "data/docs/indictment.pdf"
+        },
+        {
+          "title": "Устав Международного военного трибунала. Статья 6",
+          "file": "data/docs/imt_charter_article_6.pdf"
+        }
+      ],
+      "media": {
+        "photo": "media/jackson.jpg",
+        "video": [
+          {
+            "title": "Видеофрагмент: вступительная речь Джексона",
+            "file": "media/video/jackson.mp4",
+            "poster": "media/jackson.jpg"
+          }
+        ],
+        "audio": [
+          {
+            "title": "Аудиофрагмент: речь Джексона",
+            "file": "media/audio/jackson.mp3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maxwell_fyfe",
+      "name": "Дэвид Максвелл-Файф",
+      "role": "Представитель обвинения Великобритании",
+      "short_bio": "Представитель британской стороны обвинения. В материалах процесса выступал по вопросу дела Мартина Бормана и позиции обвинения о невозможности достоверно утверждать его смерть.",
+      "documents": [
+        {
+          "title": "Позиция обвинения по делу Мартина Бормана",
+          "file": "data/docs/bormann_position.pdf"
+        },
+        {
+          "title": "Обвинительное заключение Международного военного трибунала",
+          "file": "data/docs/indictment.pdf"
+        },
+        {
+          "title": "Устав Международного военного трибунала. Статья 6",
+          "file": "data/docs/imt_charter_article_6.pdf"
+        }
+      ],
+      "media": {
+        "photo": "media/maxwell_fyfe.jpg",
+        "video": [
+          {
+            "title": "Видеофрагмент: выступление Максвелла-Файфа",
+            "file": "media/video/maxwell_fyfe.mp4",
+            "poster": "media/maxwell_fyfe.jpg"
+          }
+        ],
+        "audio": [
+          {
+            "title": "Аудиофрагмент: позиция обвинения",
+            "file": "media/audio/maxwell_fyfe.mp3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tribunal_experts",
+      "name": "Судебные эксперты Трибунала",
+      "role": "Эксперты по вопросу вменяемости",
+      "short_bio": "Эксперты, назначенные Трибуналом для проверки состояния Юлиуса Штрайхера. Пришли к выводу, что он здоров, вменяем и может защищать себя.",
+      "documents": [
+        {
+          "title": "Заключение о вменяемости Юлиуса Штрайхера",
+          "file": "data/docs/streicher_examination.pdf"
+        }
+      ],
+      "media": {
+        "photo": "media/tribunal_experts.jpg",
+        "video": [
+          {
+            "title": "Видеофрагмент: решение по экспертизе",
+            "file": "media/video/tribunal_experts.mp4",
+            "poster": "media/tribunal_experts.jpg"
+          }
+        ],
+        "audio": [
+          {
+            "title": "Аудиофрагмент: оглашение заключения",
+            "file": "media/audio/tribunal_experts.mp3"
+          }
+        ]
+      }
+    }
+  ]
+}
