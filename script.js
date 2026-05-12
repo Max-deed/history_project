@@ -18,7 +18,7 @@ $(function () {
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
+      .replace(/\"/g, '&quot;')
       .replace(/'/g, '&#039;');
   }
 
@@ -130,6 +130,11 @@ $(function () {
     html += '</div>';
 
     html += '<div class="person-detail-section">';
+    html += '<h4>Официальные документы</h4>';
+    html += buildLinks(p.documents || [], 'Документы пока не добавлены.');
+    html += '</div>';
+
+    html += '<div class="person-detail-section">';
     html += '<h4>Видео</h4>';
     html += buildVideo(p.media && p.media.video ? p.media.video : []);
     html += '</div>';
@@ -143,22 +148,55 @@ $(function () {
     return html;
   }
 
+  function summaryDetails(pair) {
+    var html = '<div class="person-detail-full summary-detail-full">';
+
+    html += '<div class="person-detail-section summary-detail-section">';
+    html += '<h3>' + esc(pair.title || 'Итоги процесса') + '</h3>';
+    html += buildFacts(pair.summary_facts || [], 'Итоговая информация пока не добавлена.');
+    html += '</div>';
+
+    html += '</div>';
+    return html;
+  }
+
   function hideShared() {
     $('#shared-details-section').addClass('shared-details-hidden');
     $('#pair-facts-content').empty();
     $('#details-defendants').empty();
     $('#details-prosecution').empty();
+    $('.shared-details-grid').removeClass('shared-details-grid-summary');
   }
 
   function showShared(index) {
     var pair = factsData.pairs[index];
 
-    if (!pair || !pair.defendant_id || !pair.prosecution_id) {
+    if (!pair) {
       hideShared();
       return;
     }
 
     $('#shared-details-section').removeClass('shared-details-hidden');
+
+    if (pair.type === 'summary') {
+      $('.shared-details-grid').addClass('shared-details-grid-summary');
+
+      $('#pair-facts-content').html(
+        buildFacts(pair.summary_facts || [], 'Итоговая информация пока не добавлена.')
+      );
+
+      $('#details-defendants').html(summaryDetails(pair));
+      $('#details-prosecution').empty();
+      return;
+    }
+
+    if (!pair.defendant_id || !pair.prosecution_id) {
+      hideShared();
+      return;
+    }
+
+    $('.shared-details-grid').removeClass('shared-details-grid-summary');
+
     $('#pair-facts-content').html(
       buildFacts(pair.shared_facts, 'Общие факты для этого шага пока не добавлены.')
     );
@@ -175,16 +213,17 @@ $(function () {
 
     if (index === 0) {
       hideShared();
-    } else {
-      showShared(index);
+      return;
     }
+
+    showShared(index);
   }
 
   function bindTimeline() {
     timeline.on('loaded', function () {
       setTimeout(function () {
         renderTimelinePairs();
-        removeMiniPreview(); 
+        removeMiniPreview();
         renderByIndex(0);
       }, 700);
     });
@@ -192,7 +231,7 @@ $(function () {
     timeline.on('change', function (data) {
       setTimeout(function () {
         renderTimelinePairs();
-        removeMiniPreview(); // 👈 ДОБАВИЛИ
+        removeMiniPreview();
       }, 150);
 
       var uniqueId = data && data.unique_id ? data.unique_id : 'pair-0';
@@ -239,6 +278,7 @@ $(function () {
       loadFacts(initTimeline);
     });
 });
+
 $(function () {
   $('#toggle-theory').on('click', function () {
     $('#theory-block').toggleClass('theory-hidden');
@@ -248,5 +288,5 @@ $(function () {
     } else {
       $(this).text('Скрыть');
     }
-    });
   });
+});

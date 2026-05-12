@@ -140,7 +140,7 @@ section {
 
 #timeline-embed {
   width: 100%;
-  height: 360px;
+  height: 385px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,.1);
@@ -211,15 +211,22 @@ section {
 }
 
 .timeline-slide-card img {
-  width: 140px;
+  width: 220px;
+  height: 170px;
+
   max-width: 100%;
-  border-radius: 8px;
+
+  object-fit: contain;
+  object-position: center;
+
+  background: #111;
+
+  border-radius: 10px;
   display: block;
-  object-fit: cover;
 }
 
 .timeline-slide-card h3 {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.25;
   margin: 0;
 }
@@ -458,33 +465,41 @@ section {
     max-height: 42px;
   }
 
+  .main-nav {
+    width: 100%;
+    overflow: hidden;
+  }
+
   .main-nav > ul {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    flex-wrap: nowrap;
+    gap: 12px;
     overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
-    padding-bottom: 4px;
+    padding: 4px 0 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }
+
+  .main-nav > ul::-webkit-scrollbar {
+    display: none;
+  }
+
   .main-nav > ul > li {
     flex: 0 0 auto;
-  }
-  .main-nav .nav-label,
-  .main-nav > ul > li > a {
-    font-size: 13px;
-    padding: 4px 6px;
-  }
-  .main-nav > ul > li {
-    width: 100%;
+    width: auto;
     text-align: left;
   }
 
   .main-nav .nav-label,
   .main-nav > ul > li > a {
-    font-size: 14px;
-    padding: 0;
-    line-height: 1.3;
+    font-size: 12px;
+    padding: 4px 6px;
+    line-height: 1.25;
+    letter-spacing: .02em;
   }
 
   .header-title {
@@ -531,7 +546,7 @@ section {
   }
 
   #timeline-embed {
-    height: 470px !important;
+    height: 505px !important;
     border-radius: 12px;
   }
 
@@ -586,8 +601,11 @@ section {
   }
 
   .timeline-slide-card h3 {
-    font-size: 18px;
-    line-height: 1.15;
+    font-size: 13px !important;
+    line-height: 1.12;
+    font-weight: 600;
+    word-break: break-word;
+    text-align: center;
   }
 
   .tl-menubar,
@@ -686,7 +704,7 @@ section {
   }
 
   #timeline-embed {
-    height: 430px !important;
+    height: 460px !important;
   }
 
   .tl-storyslider {
@@ -703,7 +721,7 @@ section {
   }
 
   .timeline-slide-card h3 {
-    font-size: 16px;
+    font-size: 12px !important;
   }
 
   .timeline-title-card h3 {
@@ -714,4 +732,111 @@ section {
   .person-detail-section li {
     font-size: 18px;
   }
+}
+.shared-details-grid-summary {
+  grid-template-columns: 1fr !important;
+}
+
+.shared-details-grid-summary .shared-details-column:first-child {
+  grid-column: 1 / -1;
+}
+
+.shared-details-grid-summary .shared-details-column:last-child {
+  display: none;
+}
+
+.summary-detail-full {
+  gap: 0;
+}
+
+.summary-detail-section {
+  padding: 20px;
+}
+
+.summary-detail-section h3 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.summary-detail-section li {
+  margin-bottom: 10px;
+}
+/* ============================= */
+/* ВЫПАДАЮЩЕЕ МЕНЮ МАТЕРИАЛОВ */
+/* ============================= */
+
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 260px;
+  padding: 14px 0 0;
+  margin-top: 0;
+  list-style: none;
+  background: rgba(15, 15, 15, 0.96);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 10px;
+  box-shadow: 0 12px 26px rgba(0,0,0,0.35);
+  z-index: 1000;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 14px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.35;
+  text-transform: none;
+  white-space: normal;
+}
+
+.dropdown-menu li a:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* Мобильная версия */
+@media (max-width: 600px) {
+  .nav-dropdown {
+    position: static;
+  }
+
+  .dropdown-menu {
+    left: 0;
+    right: 0;
+    transform: none;
+    min-width: 100%;
+    margin-top: 6px;
+  }
+
+  .nav-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu li a {
+    font-size: 13px;
+    padding: 9px 12px;
+  }
+}
+
+.tl-storyslider {
+  height: 330px !important;
+}
+
+.tl-timenav {
+  height: 100px !important;
 }
